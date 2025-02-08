@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Orçamento.">
   <title>Orçamento | Bikcraft</title>
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,7 @@
   <header class="header-bg">
     <div class="header container">
       <a href="./">
-        <img src="./img/bikcraft.svg" alt="Bikcraft">
+        <img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
       </a>
 
       <nav aria-label="primaria">
@@ -49,14 +50,56 @@
         <label for="seguro">Seguro</label>
 
         <div class="orcamento-conteudo" id="orcamento-bikcraft">
-          <h2 class="font-1-l cor-0">Escolha a sua (BIKCRAFT)</h2>
+          <h2 class="font-1-xs cor-5">Escolha a sua</h2>
+
+          <input type="radio" name="produto" value="nimbus" id="nimbus">
+          <label for="nimbus">Nimbus Stark <span>R$4999</span></label>
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./img/icones/eletrica.svg" width="32" height="32" alt="">Motor Elétrico</li>
+              <li><img src="./img/icones/carbono.svg" width="32" height="32" alt="">Fibra de Carbono</li>
+              <li><img src="./img/icones/velocidade.svg" width="32" height="32" alt="">50 km/h</li>
+              <li><img src="./img/icones/rastreador.svg" width="32" height="32" alt="">Rastreador</li>
+            </ul>
+            <img src="./img/bicicletas/nimbus.jpg" width="1120" height="680" alt="Bicicleta preta">
+          </div>
+
+          <input type="radio" name="produto" value="magic" id="magic">
+          <label for="magic">Magic Might <span>R$2499</span></label>
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./img/icones/eletrica.svg" width="32" height="32" alt="">Motor Elétrico</li>
+              <li><img src="./img/icones/carbono.svg" width="32" height="32" alt="">Fibra de Carbono</li>
+              <li><img src="./img/icones/velocidade.svg" width="32" height="32" alt="">45 km/h</li>
+              <li><img src="./img/icones/rastreador.svg" width="32" height="32" alt="">Rastreador</li>
+            </ul>
+            <img src="./img/bicicletas/magic.jpg" width="1120" height="680" alt="Bicicleta preta">
+          </div>
+
+          <input type="radio" name="produto" value="nebula" id="nebula">
+          <label for="nebula">Nebula Cosmic <span>R$3999</span></label>
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./img/icones/eletrica.svg" width="32" height="32" alt="">Motor Elétrico</li>
+              <li><img src="./img/icones/carbono.svg" width="32" height="32" alt="">Fibra de Carbono</li>
+              <li><img src="./img/icones/velocidade.svg" width="32" height="32" alt="">40 km/h</li>
+              <li><img src="./img/icones/rastreador.svg" width="32" height="32" alt="">Rastreador</li>
+            </ul>
+            <img src="./img/bicicletas/nebula.jpg" width="1120" height="680" alt="Bicicleta branca">
+          </div>
         </div>
 
         <div class="orcamento-conteudo" id="orcamento-seguro">
-          <h2 class="font-1-l cor-0">Escolha o plano</h2>
-        </div>
+          <h2 class="font-1-xs cor-5">Escolha o plano</h2>
 
+          <input type="radio" name="produto" value="prata" id="prata">
+          <label for="prata">Prata <span>R$199</span></label>
+
+          <input type="radio" name="produto" value="ouro" id="ouro">
+          <label for="ouro">Ouro <span>R$299</span></label>
+        </div>
       </div>
+
       <div class="orcamento-dados form">
         <h2 class="font-1-xs cor-9 col-2">dados pessoais</h2>
         <div>
@@ -78,36 +121,36 @@
         <h2 class="font-1-xs cor-9 col-2">entrega</h2>
         <div>
           <label for="cep">CEP</label>
-          <input type="cep" id="cep" name="cep">
+          <input type="text" id="cep" name="cep">
         </div>
         <div>
           <label for="numero">Número</label>
-          <input type="numero" id="numero" name="numero">
+          <input type="text" id="numero" name="numero">
         </div>
         <div>
           <label for="logradouro">Logradouro</label>
-          <input type="logradouro" id="logradouro" name="logradouro">
+          <input type="text" id="logradouro" name="logradouro">
         </div>
         <div>
           <label for="bairro">Bairro</label>
-          <input type="bairro" id="bairro" name="bairro">
+          <input type="text" id="bairro" name="bairro">
         </div>
         <div>
           <label for="cidade">Cidade</label>
-          <input type="cidade" id="cidade" name="cidade">
+          <input type="text" id="cidade" name="cidade">
         </div>
         <div>
           <label for="estado">Estado</label>
-          <input type="estado" id="estado" name="estado">
+          <input type="text" id="estado" name="estado">
         </div>
-        <button class="botao col-2">Solcitar Orçamento</button>
+        <button class="botao col-2">Solicitar Orçamento</button>
       </div>
     </form>
   </main>
 
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="./img/bikcraft.svg" alt="bikcraft">
+      <img src="./img/bikcraft.svg" width="136" height="32" alt="bikcraft">
       <div class="footer-contato">
         <h3 class="font-2-l-b cor-0">Contato</h3>
         <ul class="font-2-m cor-5">
@@ -118,13 +161,13 @@
         </ul>
         <div class="footer-redes">
           <a href="./">
-            <img src="./img/redes/instagram.svg" alt="Instagram">
+            <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram">
           </a>
           <a href="./">
-            <img src="./img/redes/facebook.svg" alt="Facebook">
+            <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook">
           </a>
           <a href="./">
-            <img src="./img/redes/youtube.svg" alt="YouTube">
+            <img src="./img/redes/youtube.svg" width="32" height="32" alt="YouTube">
           </a>
         </div>
       </div>
